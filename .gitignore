@@ -32,3 +32,10 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Node
+node_modules/
+npm-debug.log*
+
+# sentinel-scan runtime state
+.quarantine/
