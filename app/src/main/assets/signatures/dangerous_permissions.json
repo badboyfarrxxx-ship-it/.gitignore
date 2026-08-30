@@ -1,0 +1,24 @@
+{
+  "_readme": "Heuristic weights (0-100 scale) for Android permissions that are commonly abused by malware families (banking trojans, spyware, ransomware). Contributions are summed and capped when scoring an installed app; this is one signal among several, not a standalone verdict.",
+  "permissions": [
+    { "permission": "android.permission.BIND_DEVICE_ADMIN", "weight": 25, "reason": "Device admin can block uninstallation — common ransomware/lockware pattern" },
+    { "permission": "android.permission.BIND_ACCESSIBILITY_SERVICE", "weight": 25, "reason": "Accessibility services can read screen content and inject input — used by banking trojans for overlay/keylogging attacks" },
+    { "permission": "android.permission.WRITE_SECURE_SETTINGS", "weight": 20, "reason": "Can modify secure system settings, normally restricted to system apps" },
+    { "permission": "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE", "weight": 15, "reason": "Can read all notifications, including one-time-password codes" },
+    { "permission": "android.permission.SYSTEM_ALERT_WINDOW", "weight": 15, "reason": "Can draw overlays on top of other apps — used for phishing overlays and clickjacking" },
+    { "permission": "android.permission.REQUEST_INSTALL_PACKAGES", "weight": 15, "reason": "Can prompt installation of additional APKs — dropper behavior" },
+    { "permission": "android.permission.RECEIVE_SMS", "weight": 15, "reason": "Can intercept incoming SMS, including OTP/2FA codes" },
+    { "permission": "android.permission.READ_SMS", "weight": 15, "reason": "Can read stored SMS messages, including OTP/2FA codes" },
+    { "permission": "android.permission.PACKAGE_USAGE_STATS", "weight": 10, "reason": "Can observe which apps the user is using, often paired with overlay attacks" },
+    { "permission": "android.permission.PROCESS_OUTGOING_CALLS", "weight": 10, "reason": "Can monitor or redirect outgoing calls" },
+    { "permission": "android.permission.SEND_SMS", "weight": 10, "reason": "Can send SMS silently, e.g. premium-rate SMS fraud" },
+    { "permission": "android.permission.MANAGE_EXTERNAL_STORAGE", "weight": 10, "reason": "Broad access to all files on shared storage" },
+    { "permission": "android.permission.RECORD_AUDIO", "weight": 8, "reason": "Can record audio in the background" },
+    { "permission": "android.permission.READ_CONTACTS", "weight": 5, "reason": "Can exfiltrate the user's contact list" },
+    { "permission": "android.permission.CALL_PHONE", "weight": 5, "reason": "Can place calls without user confirmation" },
+    { "permission": "android.permission.CAMERA", "weight": 5, "reason": "Can capture photos/video" },
+    { "permission": "android.permission.ACCESS_FINE_LOCATION", "weight": 5, "reason": "Can track precise location" },
+    { "permission": "android.permission.READ_PHONE_STATE", "weight": 5, "reason": "Can read device identifiers and call state" },
+    { "permission": "android.permission.QUERY_ALL_PACKAGES", "weight": 3, "reason": "Can enumerate every other app installed on the device" }
+  ]
+}
