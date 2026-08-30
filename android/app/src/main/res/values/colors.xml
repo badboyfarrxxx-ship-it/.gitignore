@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#1B4965</color>
+    <color name="brand_primary_dark">#0D2B3E</color>
+    <color name="brand_accent">#5FA8D3</color>
+    <color name="severity_high">#D64545</color>
+    <color name="severity_medium">#E0A11A</color>
+    <color name="severity_low">#3E8E7E</color>
+    <color name="surface_light">#F5F7F8</color>
+    <color name="surface_dark">#121A1F</color>
+    <color name="text_primary_light">#14212B</color>
+    <color name="text_primary_dark">#E7EEF2</color>
+</resources>
