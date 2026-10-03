@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sentinel Scan</string>
+    <string name="quarantine_title">Quarantine</string>
+
+    <string name="pick_folder">Choose folder to scan</string>
+    <string name="grant_full_access">Grant full-device access</string>
+    <string name="scan_full_device">Scan entire device</string>
+    <string name="view_quarantine">View quarantine (%1$d)</string>
+
+    <string name="scanning_in_progress">Scanning… %1$d files checked</string>
+    <string name="scan_complete_clean">No threats found. %1$d files scanned.</string>
+    <string name="scan_complete_threats">%1$d threat(s) found out of %2$d files scanned.</string>
+    <string name="scan_idle_hint">Pick a folder or grant full-device access to start a scan.</string>
+
+    <string name="action_quarantine">Quarantine</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_delete_forever">Delete forever</string>
+    <string name="action_quarantine_all">Quarantine all (%1$d)</string>
+
+    <string name="quarantine_empty">Quarantine is empty.</string>
+    <string name="quarantined_at">Quarantined %1$s</string>
+
+    <string name="permission_needed_title">Full-device access needed</string>
+    <string name="permission_needed_message">To scan the entire device, Sentinel Scan needs the \"All files access\" permission. You\'ll be taken to system settings to grant it.</string>
+
+    <string name="quarantine_success">Quarantined %1$s</string>
+    <string name="quarantine_failure">Could not quarantine %1$s: %2$s</string>
+    <string name="restore_success">Restored %1$s</string>
+    <string name="restore_failure">Could not restore %1$s: %2$s</string>
+    <string name="delete_success">Permanently deleted %1$s</string>
+</resources>

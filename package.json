@@ -1,0 +1,25 @@
+{
+  "name": "sentinel-scan",
+  "version": "1.0.0",
+  "description": "A CLI virus and malware scanner: signature + heuristic detection with quarantine, removal, and restore.",
+  "main": "src/scanEngine.js",
+  "bin": {
+    "sentinel-scan": "bin/cli.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "antivirus",
+    "malware",
+    "scanner",
+    "security",
+    "cli"
+  ]
+}
